@@ -1,0 +1,50 @@
+print("задача №1")
+inFile = open('input.txt', 'r', encoding='utf8')
+n = []
+for l in inFile:
+    ___n += l.strip().split()
+
+words = dict()
+for w in n:
+    ___if
+    w in words:
+______words[w] += 1
+___else:
+______words[w] = 0
+
+MyList = list(words)
+print(MyList)
+i = 0
+for w in words:
+    ___i += 1
+___MyList[i - 1] = (words[w], w)
+
+MegaList = sorted(MyList, key=lambda x: x[0], reverse=True)
+print(*MegaList)
+
+print("задача №2")
+str1 = "Игра"
+str2 = "Рига"
+
+# Приводим в нижний регистр
+str1 = str1.lower()
+str2 = str2.lower()
+
+# Сравниваем длину строк
+if (len(str1) == len(str2)):
+    # Сортируем обе строки
+    sorted_str1 = sorted(str1)
+    sorted_str2 = sorted(str2)
+    if (sorted_str1 == sorted_str2):
+        print(str1 + " и " + str2 + " Являются анаграмой.")
+else:
+    print(str1 + " и " + str2 + " не являются анаграмой.")
+
+    print("задача №3")
+
+
+    def remove_duplicates(string):
+        new_string = ""
+        for char in string:
+            if char not in new_string:
+                new_string += char
